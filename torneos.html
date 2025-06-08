@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Torneos</title>
+    <link rel="stylesheet" href="stylesto.css" />
+    <link rel="icon" href="peon.webp" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <nav>
+      <div class="nav-container">
+        <a href="index.html" class="logoenlance">
+        <div class="logo">♚ Archivo</div>
+        </a>
+        <ul class="links" id="navLinks">
+          <li onclick="window.location.href='index.html'">INICIO</li>
+          <li onclick="window.location.href='m.html'">MATERIALES</li>
+          <li onclick="window.location.href='torneos.html'">TORNEOS</li>
+          <li onclick="window.location.href='desafios.html'">DESAFÍO</li>
+          <li onclick="window.location.href='partidas.html'">PARTIDAS</li>
+          <li onclick="window.location.href='ranking.html'">RANKING</li>
+        </ul>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+      </div>
+    </nav>
+  </div>
+        <main class="content">
+            <section class="section torneo">
+              <h2>Calendario</h2>
+              <div class="calendario-container">
+              <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FArgentina%2FCordoba&hl=es_419&showPrint=0&showTabs=0&showCalendars=0&showTz=0&showTitle=0&src=ZTViNDRmYjliODFkNTFjNTM0NTk2YWM0YWRkY2JmY2Y3ZDQ5ZDM0NzcwN2FmMjQxYzVlNTJjOGU0NmMwNmM4OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23009688" style="border-width:0" width="600" height="450" frameborder="0" scrolling="no"></iframe>
+              </div>
+              <h2>IRT Sub2400 Premio "REYNALDO CASABELLA" - Rafaela</h2>
+                <div class="torneo-flex">
+                    <div class="imagen-torneo">
+                        <img src="TDR1.jpg" alt="Torneo de Ajedrez" />
+                    </div>
+
+                    <aside class="ranking-container">
+                        <h3>Podio del Torneo</h3>
+
+                        <div class="ranking-item">
+                            <div class="ranking-position position-1">1</div>
+                            <div class="player-name">Zapata Charles, Santiago</div>
+                        </div>
+
+                        <div class="ranking-item">
+                            <div class="ranking-position position-2">2</div>
+                            <div class="player-name">Tobares, Leandro</div>
+                        </div>
+
+                        <div class="ranking-item">
+                            <div class="ranking-position position-3">3</div>
+                            <div class="player-name">Díaz, Carlos Andrés</div>
+                        </div>
+                    </aside>
+                </div>
+
+                <button class="boton-lichess" onclick="window.location.href='https://lichess.org/study/4C2d9Etl'">
+                    PARTIDAS
+                </button>
+            </section>
+            
+        </main>
+    </div>
+          <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

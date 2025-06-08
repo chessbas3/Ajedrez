@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Española</title>
+  <link rel="stylesheet" href="general.css" />
+  <link rel="icon" href="peon.webp" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <nav>
+      <div class="nav-container">
+        <a href="index.html" class="logoenlance">
+          <div class="logo">♚ Archivo</div>
+        </a>
+        <ul class="links" id="navLinks">
+          <li onclick="window.location.href='index.html'">INICIO</li>
+          <li onclick="window.location.href='m.html'">MATERIALES</li>
+          <li onclick="window.location.href='torneos.html'">TORNEOS</li>
+          <li onclick="window.location.href='desafios.html'">DESAFÍO</li>
+          <li onclick="window.location.href='partidas.html'">PARTIDAS</li>
+          <li onclick="window.location.href='ranking.html'">RANKING</li>
+        </ul>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+      </div>
+    </nav>
+  </div>
+  
+  <div class="content">
+
+    <section class="section" id="videos">
+      <h2>Videos</h2>
+      <div class="video-container">
+        <div class="video-item">
+          <h3>Introducción a la Española</h3>
+          <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CwA0b67V798?si=B-ZCUBWtgu--quyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>          </div>
+        </div>
+        <div class="video-item">
+          <h3>Partida Ejemplo con Análisis</h3>
+          <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DoFzQbCFJdU?si=h6v_NTCXGblF3Ay7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>          </div>
+        </div>
+    </section>
+
+    <section class="section" id="paginas">
+      <h2>Páginas Web + Estudios de Lichess</h2>
+      <div class="pages-container">
+        <div class="page-item">
+          <h3>Introducción (Chess.com)</h3>
+          <p>Historia e introdución a la Apertura Española.</p>
+          <a href="https://www.chess.com/es/article/view/la-apertura-ruy-lopez-explicada">Enlace</a>
+        </div>
+    </section>
+  </div>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

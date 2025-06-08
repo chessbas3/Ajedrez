@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Desafío Semanal</title>
+  <link rel="stylesheet" href="stylesdes.css" />
+  <link rel="icon" href="peon.webp" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <nav>
+      <div class="nav-container">
+        <a href="index.html" class="logoenlance">
+        <div class="logo">♚ Archivo</div>
+        </a>
+        <ul class="links" id="navLinks">
+          <li onclick="window.location.href='index.html'">INICIO</li>
+          <li onclick="window.location.href='m.html'">MATERIALES</li>
+          <li onclick="window.location.href='torneos.html'">TORNEOS</li>
+          <li onclick="window.location.href='desafios.html'">DESAFÍO</li>
+          <li onclick="window.location.href='partidas.html'">PARTIDAS</li>
+          <li onclick="window.location.href='ranking.html'">RANKING</li>
+        </ul>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+      </div>
+    </nav>
+  </div>
+    <div class="content">
+      <section class="section">
+        <h2>Desafío Semanal -  Juegan Blancas</h2>
+        
+        <div class="desafio-image-container">
+          <img src="problemasemanal.png" alt="Problema semanal" />
+        </div>
+
+        <form id="desafio-form">
+          <input type="text" id="username" placeholder="Tu nombre" required />
+          <textarea id="answer" placeholder="Escribe tu respuesta al desafío" required></textarea>
+          <button type="submit">Enviar respuesta</button>
+        </form>
+        <section id="answers-section" class="section">
+          <h3>Respuestas enviadas</h3>
+          <div id="answers-container"></div>
+        </section>
+
+      </section>
+    </div>
+  </div>
+    <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+    });
+  </script>
+  <script type="module" src="desafio.js"></script>
+</body>
+</html>
+
+

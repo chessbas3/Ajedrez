@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Libros</title>
+    <link rel="stylesheet" href="stylesl.css" />
+    <link rel="icon" href="peon.webp" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <nav>
+      <div class="nav-container">
+        <a href="index.html" class="logoenlance">
+        <div class="logo">♚ Archivo</div>
+        </a>
+        <ul class="links" id="navLinks">
+          <li onclick="window.location.href='index.html'">INICIO</li>
+          <li onclick="window.location.href='m.html'">MATERIALES</li>
+          <li onclick="window.location.href='torneos.html'">TORNEOS</li>
+          <li onclick="window.location.href='desafios.html'">DESAFÍO</li>
+          <li onclick="window.location.href='partidas.html'">PARTIDAS</li>
+          <li onclick="window.location.href='ranking.html'">RANKING</li>
+        </ul>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+      </div>
+    </nav>
+  </div>
+        <div class="content">
+            <section class="section" id="archivos">
+                <h2>Todos los Libros</h2>
+                <div class="files-container">
+                    <div class="file-item">
+                        <h3>Tratado General de Ajedrez - Tomo III Conformación de peones</h3>
+                        <img src="tgda3.jpg" alt="Tomo III" />
+                        <p>Roberto G. Grau</p>
+                        <a href="Tratado_General_de_Ajedrez_Tomo_III_Conf.pdf">Abrir archivo</a>
+                    </div>
+                    <div class="file-item">
+                        <h3>Tratado General de Ajedrez - Tomo IV Estrategia Superior</h3>
+                        <img src="TGDA4.jpeg" alt="Tomo IV" />
+                        <p>Roberto G. Grau</p>
+                        <a href="Tratado_General_de_Ajedrez_Tomo_IV_Estra.pdf">Abrir archivo</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+      <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
