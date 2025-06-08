@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aperturas</title>
+  <link rel="stylesheet" href="stylesm.css" />
+  <link rel="icon" href="peon.webp" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <nav>
+      <div class="nav-container">
+        <a href="index.html" class="logoenlance">
+          <div class="logo">♚ Archivo</div>
+        </a>
+        <ul class="links" id="navLinks">
+          <li onclick="window.location.href='index.html'">INICIO</li>
+          <li onclick="window.location.href='m.html'">MATERIALES</li>
+          <li onclick="window.location.href='torneos.html'">TORNEOS</li>
+          <li onclick="window.location.href='libros.html'">LIBROS</li>
+          <li onclick="window.location.href='desafios.html'">DESAFÍO</li>
+          <li onclick="window.location.href='partidas.html'">PARTIDAS</li>
+          <li onclick="window.location.href='ranking.html'">RANKING</li>
+        </ul>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="content">
+    <section class="section" id="categorias">
+        <h2>Elegí una apertura</h2>
+      <div class="image-grid">
+        <a href="carokann.html"><img src="CaroKann.png" alt=""></a>
+        <a href="Española.html"><img src="Española.png" alt=""></a>        <a href="GambitoDama.html"><img src="GambitoDama.png" alt=""></a>
+        <a href="IndiaRey.html"><img src="IndiaRey.png" alt=""></a>
+        <a href="Nimzoindia.html"><img src="Nimzoindia.png" alt=""></a>
+        <a href="Siciliana.html"><img src="Siciliana.png" alt=""></a>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

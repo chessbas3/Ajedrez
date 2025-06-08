@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>India de Rey</title>
+  <link rel="stylesheet" href="general.css" />
+  <link rel="icon" href="peon.webp" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <nav>
+      <div class="nav-container">
+        <a href="index.html" class="logoenlance">
+          <div class="logo">♚ Archivo</div>
+        </a>
+        <ul class="links" id="navLinks">
+          <li onclick="window.location.href='index.html'">INICIO</li>
+          <li onclick="window.location.href='m.html'">MATERIALES</li>
+          <li onclick="window.location.href='torneos.html'">TORNEOS</li>
+          <li onclick="window.location.href='desafios.html'">DESAFÍO</li>
+          <li onclick="window.location.href='partidas.html'">PARTIDAS</li>
+          <li onclick="window.location.href='ranking.html'">RANKING</li>
+        </ul>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+      </div>
+    </nav>
+  </div>
+  <div class="content">
+    <section class="section" id="archivos">
+      <h2>Archivos</h2>
+      <div class="files-container" id="filesContainer">
+        <div class="file-item">
+          <h3>Defensa India de Rey (hechizeros)</h3>
+          <a href="Defensa India de Rey(hechizeros).pdf" target="_blank">Abrir archivo</a>
+        </div>        
+  </div>
+    </section>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

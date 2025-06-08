@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finales y Estrategia</title>
+  <link rel="stylesheet" href="general.css" />
+  <link rel="icon" href="peon.webp" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <nav>
+      <div class="nav-container">
+        <a href="index.html" class="logoenlance">
+        <div class="logo">♚ Archivo</div>
+        </a>
+        <ul class="links" id="navLinks">
+          <li onclick="window.location.href='index.html'">INICIO</li>
+          <li onclick="window.location.href='m.html'">MATERIALES</li>
+          <li onclick="window.location.href='torneos.html'">TORNEOS</li>
+          <li onclick="window.location.href='desafios.html'">DESAFÍO</li>
+          <li onclick="window.location.href='partidas.html'">PARTIDAS</li>
+          <li onclick="window.location.href='ranking.html'">RANKING</li>
+        </ul>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+      </div>
+    </nav>
+  </div>
+  
+  <div class="content">
+    <section class="section" id="paginas">
+      <h2>Páginas Web + Estudios de Lichess</h2>
+      <div class="pages-container">
+        <div class="page-item">
+          <h3>Posición de Lucena</h3>
+          <p>La posición de Lucena es una disposición de piezas específica en los finales de torres.</p>
+          <a href="https://ajedrezpractico.com/finales/posicion-de-lucena/" target="_blank">Enlace</a>
+        </div>
+        <div class="page-item">
+          <h3>Finales de Torres</h3>
+          <p>Un estudio de Lichess sobre los finales de torres.</p>
+          <a href="https://lichess.org/study/ODogHzJ4/qhHPeqZP" target="_blank">Enlace</a>
+        </div>
+    </section>
+
+    <section class="section" id="archivos">
+      <h2>Archivos</h2>
+      <div class="files-container">
+        <div class="file-item">
+          <h3>"El Virtuoso de los Finales"</h3>
+          <p>Un libro sobre finales.</p>
+          <a href="el virtuoso de los finales - Vasili Smyslov.pdf">Abrir archivo</a>
+        </div>
+        <div class="file-item">
+          <h3>"Los 100 Finales Que Hay Que Saber"</h3>
+          <p>Un libro sobre finales.</p>
+          <a href="Los_100_finales_que_hay_que_saber_-_Jesus_de_la_Villa.pdf">Abrir archivo</a>
+        </div>
+        <div class="file-item">
+          <h3>"Curso Avanzado"</h3>
+          <p>Un curso general de ajedrez.</p>
+          <a href="escuela-de-ajedrc3a9z-4-curso-superior-illescas-miguel.pdf">Abrir archivo</a>
+        </div>
+        <div class="file-item">
+          <h3>"Curso intermedio"</h3>
+          <p>Un curso general de ajedrez.</p>
+          <a href="escuela-de-ajedrc3a9z-3-curso-intermedio-illescas-miguel.pdf">Abrir archivo</a>
+        </div>
+        <div class="file-item">
+          <h3>"Tratado General de Ajedrez III"</h3>
+          <p>Un popular libro de ajedrez.</p>
+          <a href="Tratado_General_de_Ajedrez_Tomo_III_Conf.pdf">Abrir archivo</a>
+        </div>
+        <div class="file-item">
+          <h3>"Tratado General de Ajedrez IV"</h3>
+          <p>Un popular libro de ajedrez.</p>
+          <a href="Tratado_General_de_Ajedrez_Tomo_IV_Estra.pdf">Abrir archivo</a>
+        </div>
+        <div class="file-item">
+          <h3>Curso Avanzado COMPLETO</h3>
+          <p>Un curso general de ajedrez.</p>
+          <a href="Curso Avanzado.zip" download>Descargar ZIP</a>
+        </div>
+        <div class="file-item">
+          <h3>Curso intermedio COMPLETO</h3>
+          <p>Un curso general de ajedrez.</p>
+          <a href="Curso Intermedio.zip" download>Descargar ZIP</a>
+        </div>
+  </div>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
